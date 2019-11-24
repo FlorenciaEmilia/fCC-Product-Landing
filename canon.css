@@ -1,0 +1,272 @@
+body{
+  font-family: 'Open Sans', sans-serif; 
+}
+
+#header{
+display: flex;
+background-color: white;
+align-items: center;
+position: fixed;
+top:0;
+width: 100%;
+
+}
+nav-bar{
+  background-color: white;
+  letter-spacing: 1px;
+}
+
+
+.nav-link{
+  padding-right: 3vw;
+  font-weight: bold;
+  color: #5c5c5c;
+  text-decoration: none;
+}
+
+.nav-link:hover{
+  color: #000000;
+}
+
+#header-img{
+  height: 8vh;
+}
+
+/*Presentation*/
+
+#presentation{
+  display: flex;
+  justify-content: space-between;
+}
+
+#presentation img{
+  max-width:75%;
+  display: block;
+  height: auto;
+}
+
+  h1{
+    margin: auto;
+    align-self: center;
+}
+
+
+
+
+/*Products*/
+h2{
+ position: relative;
+ margin-top: 6vh;
+ text-align: center;
+}
+#products{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.product img{
+    width: 25vw;
+}
+.product{
+  width: 25vw;
+  padding: 10px;
+  text-align: justify;
+  border: 1px solid #ed0520;
+  box-shadow: 5px 10px #ed0520;
+}
+
+.product h3{
+   text-align: center;
+}
+
+/*Learn*/
+#learn{
+  margin-top:10vh;
+  display: flex;    
+}
+
+#learn p{
+   text-align: justify;
+   padding: 5px 100px 5px 100px;
+}
+
+/* Calibration Support*/
+#support{
+   display: flex;
+   flex-direction: row-reverse;
+}
+
+#support img{
+   width: 35vw;
+ 
+}
+
+.calibration{
+  width: 50vw;
+  margin: auto;
+}
+
+#support p{
+  text-align: justify;
+  padding: 5px 100px 5px 100px;   
+}
+
+/*My canon story*/
+#story p{
+   text-align: center;
+   font-weight: bold;
+}
+.image-set{
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.image-set img{
+   width:25vh;
+}
+
+.image-set img:hover{
+  -webkit-transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/*Contact Section*/
+#contact{
+   background-color: #e0dede;
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 10vh;
+   padding-top: 1vh;
+   padding-bottom:1vh;
+}
+
+input[type="email"]{
+   border: 1px solid black;
+   padding: 1vh;
+}
+
+input[type="submit"]{
+   border: #ed0520;
+   background-color: #ed0520;
+   color:white;
+   letter-spacing: 1px;
+   padding: 1vh;
+   margin-top: 1vh;
+}
+
+input[type="submit"]:hover{
+  border:#87000a;
+  background-color: #87000a;
+}
+
+.networks i{
+  margin-left: 3vw;
+  margin-top: 2vh;
+}
+
+.networks h3{
+   text-align: center;
+}
+
+.fas , .far{
+margin-right: 1vw;
+}
+
+#fab{
+text-align: center;
+}
+
+/*----Media Query----*/
+
+@media (orientation: portrait){
+/*nav bar*/
+#header #nav-bar a{
+  font-size: 13px;
+  padding:0;
+  margin: 1vw;
+}
+
+/*presentation*/
+#presentation img{
+ max-width:100%;
+}
+#presentation h1{
+ display: none;
+}
+
+/*featured products*/
+#products .product{
+  float: none;
+  width: 90%;
+  margin-bottom: 25px;
+}
+
+#products .product img{
+ display: none;
+}
+
+/*learn*/
+#learn{
+display: block;
+}
+
+#learn p{
+ padding: 0;
+ width:90%;
+ margin: auto;
+}
+
+#learn iframe{
+ display: block;
+ margin-top:2em;
+ width:100%;   
+} 
+
+/*calibration support*/
+#support{
+ margin-top:2em;
+}
+
+#support p{
+margin-left:-100px;
+width:100%;
+}
+
+/*My Canon Story*/
+.image-set{
+display: none;
+}
+
+/*Contact*/
+#contact{
+display: block;
+font-size: 15px;
+}
+
+#contact h3, #contact p{
+text-align: center;
+}
+
+#contact form{
+display: block;
+position: relative;
+left: 25%;
+}
+
+.networks{
+display: block;
+}
+
+.networks span{
+display: block;
+text-align: center;
+}
+
+#fab{
+text-align: center;
+}
+
+}
